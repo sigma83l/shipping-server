@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 
@@ -29,7 +29,7 @@ tracking_data = {
         "weight": " 1,074 Kg",
         "mode": "Sea Transportation",
         "quantity": 1,
-        "current_status": "In Transit",
+        "current_status": "Picked Up",
         "tracking": [
             {
                 "id": 1,
@@ -133,9 +133,6 @@ tracking_data = {
 
 }
 
-@app.route('/')
-def index():
-    return render_template('tracking.html')
 
 @app.route('/track', methods=['GET'])
 def track():
