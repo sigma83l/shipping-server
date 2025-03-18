@@ -29,7 +29,7 @@ tracking_data = {
         "weight": " 1,074 Kg",
         "mode": "Sea Transportation",
         "quantity": 1,
-        "current_status": "Picked Up",
+        "current_status": "IN Transit",
         "tracking": [
             {
                 "id": 1,
