@@ -7,7 +7,7 @@ CORS(app)
 
 tracking_data = {    
     "H2SsJ93dM2": {
-        "merchant": "SENOC POINT OF SALE MARKETING",
+        "merchant": "Senoc Point Of Sale Marketing",
         "first_name": "Mercel",
         "last_name": "Foucault",
         "email": "marcelfoucault@gmail.com",
@@ -22,14 +22,14 @@ tracking_data = {
         "country": "Canada",
         "scheduled_arrival": "27 April 2025",
         "transit_time": "38 days 13 hours",
-        "pick_up_date": "18 March 2025",
-        "service_type": "Express",
+        "pick_up_date": "19 March 2025",
+        "service_type": "Standard",
         "Total_Freight": 1680.00,
-        "parcel_type": "container",
+        "parcel_type": "Container",
         "weight": " 1,074 Kg",
         "mode": "Sea Transportation",
         "quantity": 1,
-        "current_status": "IN Transit",
+        "current_status": "Picked Up",
         "tracking": [
             {
                 "id": 1,
