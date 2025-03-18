@@ -65,6 +65,7 @@ tracking_data = {
                 "is_checked": False
             }
         ],
+        "tracking_additional_info": "From port of New York (USNYC) to 1763 Kathleen Street, Val Caron, ON, Canada by Truck it will take 12 hours 55 minutes",
         "description": "Electronics - Mobile Phone",
         "additional_information": "Handle with care",
     },
