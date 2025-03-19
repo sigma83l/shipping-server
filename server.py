@@ -29,7 +29,7 @@ tracking_data = {
         "weight": " 1,074 Kg",
         "mode": "Sea Transportation",
         "quantity": 1,
-        "current_status": "Picked Up",
+        "current_status": "In Transit",
         "tracking": [
             {
                 "id": 1,
@@ -69,7 +69,7 @@ tracking_data = {
         ],
         "tracking_additional_info": "From Port of New York (USNYC) to 1763 Kathleen Street, Val Caron, ON, Canada by Truck it will take 12 hours 55 minutes",
         "description": "Electronics - Mobile Phone",
-        "additional_information": "Handle with care",
+        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New York, USA And The Estimated Arrival Time Is 27/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition.",
     },
     "KOf34Ws69d": {
         "merchant": "SENOC POINT OF SALE MARKETING",
