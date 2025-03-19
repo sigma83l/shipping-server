@@ -7,7 +7,7 @@ CORS(app)
 
 tracking_data = {    
     "H2SsJ93dM2": {
-        "merchant": "Senoc Point Of Sale Marketing",
+        "merchant": "Senoc Point of Sale Marketing",
         "first_name": "Mercel",
         "last_name": "Foucault",
         "email": "marcelfoucault@gmail.com",
@@ -33,24 +33,24 @@ tracking_data = {
         "tracking": [
             {
                 "id": 1,
-                "port_name": "Port Of Manila (PHMNL)",
+                "port_name": "Port of Manila (PHMNL)",
                 "country": "Philippines",
                 "scheduled_departure": "20 March 2025",
                 "scheduled_arrival": "28 March 2025 ",
                 "transit_duration": "8 days 12 hours",
-                "arrival_port": "Port Of Shanghai (CNSHG)",
+                "arrival_port": "Port of Shanghai (CNSHG)",
                 "vessel_name": "EVER BLISS",
                 "vessel_imo": "9786932",
                 "is_checked": False
             },
             {
                 "id": 2,
-                "port_name": "Port Of Shanghai (CNSHG)",
+                "port_name": "Port of Shanghai (CNSHG)",
                 "country": "China",
                 "scheduled_departure": "01 April 2025",
                 "scheduled_arrival": "27 April 2025 ",
                 "transit_duration": "26 days 22 hours",
-                "arrival_port": "Port Of New York (USNYC)",
+                "arrival_port": "Port of New York (USNYC)",
                 "vessel_name": "OOCL BERLIN",
                 "vessel_imo": "9622605",
                 "is_checked": False
@@ -67,7 +67,7 @@ tracking_data = {
                 "is_checked": False
             }
         ],
-        "tracking_additional_info": "From port of New York (USNYC) to 1763 Kathleen Street, Val Caron, ON, Canada by Truck it will take 12 hours 55 minutes",
+        "tracking_additional_info": "From Port of New York (USNYC) to 1763 Kathleen Street, Val Caron, ON, Canada by Truck it will take 12 hours 55 minutes",
         "description": "Electronics - Mobile Phone",
         "additional_information": "Handle with care",
     },
