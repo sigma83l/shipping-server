@@ -33,24 +33,24 @@ tracking_data = {
         "tracking": [
             {
                 "id": 1,
-                "port_name": "Port of Manila (PHMNL)",
+                "port_name": "Port Of Manila (PHMNL)",
                 "country": "Philippines",
                 "scheduled_departure": "20 March 2025",
                 "scheduled_arrival": "28 March 2025 ",
                 "transit_duration": "8 days 12 hours",
-                "arrival_port": "Port of Shanghai (CNSHG)",
+                "arrival_port": "Port Of Shanghai (CNSHG)",
                 "vessel_name": "EVER BLISS",
                 "vessel_imo": "9786932",
                 "is_checked": False
             },
             {
                 "id": 2,
-                "port_name": "Port of Shanghai (CNSHG)",
+                "port_name": "Port Of Shanghai (CNSHG)",
                 "country": "China",
                 "scheduled_departure": "01 April 2025",
                 "scheduled_arrival": "27 April 2025 ",
                 "transit_duration": "26 days 22 hours",
-                "arrival_port": "port of New York (USNYC)",
+                "arrival_port": "Port Of New York (USNYC)",
                 "vessel_name": "OOCL BERLIN",
                 "vessel_imo": "9622605",
                 "is_checked": False
