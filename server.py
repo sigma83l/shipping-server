@@ -123,7 +123,7 @@ tracking_data = {
         ],
         "tracking_additional_info": "From Port of New Orleans (USMSY) to 488 Hwy W, Rocky Mount, Missouri, 65072, USA by Truck it will take 15 hours.",
         "description": "Electronics - Mobile Phone",
-        "additional_information": "In Transit Already.",
+        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New Orleans, USA And The Estimated Arrival Time Is 28/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition.",
     },
 
 }
