@@ -69,7 +69,7 @@ tracking_data = {
         ],
         "tracking_additional_info": "From Port of New York (USNYC) to 1763 Kathleen Street, Val Caron, ON, Canada by Truck it will take 12 hours 55 minutes",
         "description": "Electronics - Mobile Phone",
-        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New York, USA And The Estimated Arrival Time Is 27/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition.",
+        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New York, USA And The Estimated Arrival Time Is 27/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition. ------------------------------------ Your cargo has arrived at Port of Shanghai (CNSHG) aboard EVER BLISS (IMO: 9786932) and is scheduled for transshipment to OOCL BERLIN (IMO: 9622605), with a scheduled departure on April 1, 2025, and an estimated arrival at Port of New York (USNYC) on April 27, 2025.",
     },
     "KOf34Ws69d": {
         "merchant": "Senoc Point of Sale Marketing",
