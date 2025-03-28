@@ -123,7 +123,7 @@ tracking_data = {
         ],
         "tracking_additional_info": "From Port of New Orleans (USMSY) to 488 Hwy W, Rocky Mount, Missouri, 65072, USA by Truck it will take 15 hours.",
         "description": "Electronics - Mobile Phone",
-        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New Orleans, USA And The Estimated Arrival Time Is 28/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition. \n\n Your cargo has arrived at Port of Busan (KRPS) aboard NAVIOS UTMOST (IMO: 9972787) and is scheduled for transshipment to CMA CGM ALMAVIVA (IMO: 9450648), with a scheduled departure on April 2, 2025, and an estimated arrival at Port of New Orleans (USMSY) on April 28, 2025.",
+        "additional_information": "The Designated Ship Has Arrived. The Loaded 20ft Container Is Loaded On The Ship As Per The Cargo Plan. The Ship Will Now Depart For The Next Assigned Port. Final Destination Port Is New Orleans, USA And The Estimated Arrival Time Is 28/04/2025 Subject To Delay Especially Under Unexpected Severe Weather Condition. ----------------------------------------------------------- Your cargo has arrived at Port of Busan (KRPUS) aboard NAVIOS UTMOST (IMO: 9972787) and is scheduled for transshipment to CMA CGM ALMAVIVA (IMO: 9450648), with a scheduled departure on April 2, 2025, and an estimated arrival at Port of New Orleans (USMSY) on April 28, 2025.",
     },
 
 }
