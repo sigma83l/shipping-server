@@ -29,7 +29,7 @@ tracking_data = {
         "weight": " 1,074 Kg",
         "mode": "Sea Transportation",
         "quantity": 1,
-        "current_status": "In Transit",
+        "current_status": "On Hold",
         "tracking": [
             {
                 "id": 1,
@@ -76,7 +76,7 @@ tracking_data = {
         "first_name": "Greg",
         "last_name": "Mahurin",
         "email": "mahuringreg@gmail.com",
-        "product": "2018 Kubota E85 Crawler Excavator (B48411753)",
+        "product": "2018 Bobcat E85 Crawler Excavator (B48411753)",
         "merchant_address": "Terelay Industrial Estate, Bo. Pittland, Provincial Rd, Cabuyao, Laguna, Philippines",
         "merchant_phone_number": "+63 (961) 479 1394 / +63 (920) 142 7892",
         "merchant_email": "info@senocmarketing.com",
