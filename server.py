@@ -221,24 +221,17 @@ def register():
     email = data.get('email')
     password = data.get('password')
 
-    # Check if user already exists
     if users_col.find_one({'email': email}):
         return jsonify({"error": "User already exists"}), 409
 
-    # Hash the password
-    hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+    user = users_col.insert_one({'email': email, 'password': password})
 
-    # Insert user into the database
-    user = users_col.insert_one({'email': email, 'password': hashed_pw})
-
-    # Get user data (including ObjectId)
     new_user = users_col.find_one({'_id': user.inserted_id})
-
-    # Log the user in by storing user ID in session
-    session['user_id'] = str(new_user['_id'])  # Store user ID in the session
-    session.permanent = True  # Make session permanent
+    session['user_id'] = str(new_user['_id'])
+    session.permanent = True
 
     return jsonify({"message": "Registration successful, you are now logged in"}), 201
+
 
 @app.route('/dashboard', methods=['GET'])
 def dashboard():
@@ -259,14 +252,12 @@ def login():
     email = data.get('email')
     password = data.get('password')
 
-    # Find user in the database by email
     user = users_col.find_one({'email': email})
-    if not user:
+    if not user or user['password'] != password:
         return jsonify({"error": "Invalid credentials"}), 401
 
-    # Check password
-    if not bcrypt.checkpw(password.encode('utf-8'), user['password']):
-        return jsonify({"error": "Invalid credentials"}), 401
+    session['user_id'] = str(user['_id'])
+    session.permanent = True
 
     # Store user info in session after successful login
     session['user_id'] = str(user['_id'])  # You can store other details like email if needed
