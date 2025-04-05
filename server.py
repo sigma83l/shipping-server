@@ -24,7 +24,7 @@ load_dotenv()
 MONGO_URI =  'mongodb+srv://' + username + ':' + password + "@cluster0.kpry90i.mongodb.net/?retryWrites=true&w=majority"
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True, origins=["https://lexfleetlogisticsservices.com"])
 
 # Setup MongoDB client
 client = MongoClient(MONGO_URI, tls=True, tlsAllowInvalidCertificates=True, tlsCAFile=certifi.where())
