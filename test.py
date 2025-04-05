@@ -13,3 +13,4 @@ client = MongoClient(
     MONGO_URI,
     tlsCAFile=certifi.where()
 )
+
