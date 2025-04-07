@@ -40,7 +40,7 @@ app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
 app.secret_key = os.getenv('SECRET_KEY', 'a_very_secret_key')  # Make sure to set a real secret key
-
+session.permanent = True
 mail = Mail(app)
 
 app.permanent_session_lifetime = timedelta(minutes=30)
@@ -258,10 +258,6 @@ def login():
 
     session['user_id'] = str(user['_id'])
     session.permanent = True
-
-    # Store user info in session after successful login
-    session['user_id'] = str(user['_id'])  # You can store other details like email if needed
-    session.permanent = True  # Make the session permanent
 
     return jsonify({"message": "Login successful"}), 200
 
