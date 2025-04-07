@@ -39,6 +39,8 @@ app.config['MAIL_USE_SSL'] = os.getenv('MAIL_USE_SSL') != 'False'
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
+app.config['SESSION_COOKIE_HTTPONLY'] = True  # Protects the session cookie from JavaScript access
+app.config['SESSION_COOKIE_SECURE'] = False  # Set to True if you're using HTTPS
 app.secret_key = os.getenv('SECRET_KEY', 'a_very_secret_key')  # Make sure to set a real secret key
 mail = Mail(app)
 
