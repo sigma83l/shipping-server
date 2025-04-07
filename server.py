@@ -273,13 +273,17 @@ def logout():
 
 # ---------------- TRACKING ROUTES ---------------- #
 
-# @app.route('/get-all-trackings', methods=['GET'])
-# def get_all_trackings():
-#     try:
-#         trackings = list(tracking_col.find({}, {'_id': False}))
-#         return jsonify(trackings), 200
-#     except Exception as e:
-#         return jsonify({'error': str(e)}), 500
+@app.route('/get-all-trackings', methods=['GET'])
+def get_all_trackings():
+
+    if 'user_id' not in session:
+        return jsonify({"error": "Unauthorized, please log in first"}), 401
+    
+    try:
+        trackings = list(tracking_col.find({}, {'_id': False}))
+        return jsonify(trackings), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
     
 @app.route('/track', methods=['GET'])
 def get_tracking():
