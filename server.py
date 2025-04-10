@@ -40,7 +40,8 @@ app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
 app.config['SESSION_COOKIE_HTTPONLY'] = True  # Protects the session cookie from JavaScript access
-app.config['SESSION_COOKIE_SECURE'] = False  # Set to True if you're using HTTPS
+app.config['SESSION_COOKIE_SECURE'] = True  # Set to True if you're using HTTPS
+app.config['SESSION_COOKIE_SAMESITE'] = 'None'
 app.secret_key = os.getenv('SECRET_KEY', 'a_very_secret_key')  # Make sure to set a real secret key
 mail = Mail(app)
 
@@ -327,7 +328,6 @@ def add_tracking():
     {data['additional_information']}
     """
 
-    # Send the email with the tracking details
     send_email(
         subject=f"New Tracking Data: {data['tracking_number']}",
         body=tracking_details,
@@ -355,7 +355,6 @@ def update_tracking(tracking_number):
 
 @app.route('/delete-tracking/<tracking_number>', methods=['DELETE'])
 def delete_tracking(tracking_number):
-    # Check if user is logged in (i.e., if session['user_id'] exists)
     if 'user_id' not in session:
         return jsonify({"error": "Unauthorized, please log in first"}), 401
 
