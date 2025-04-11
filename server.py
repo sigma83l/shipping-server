@@ -326,6 +326,9 @@ def add_tracking():
 
     Additional Information:
     {data['additional_information']}
+    Tracking Info:
+    {data['tracking_additional_info']}
+
     """
 
     send_email(
