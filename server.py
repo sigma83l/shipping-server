@@ -322,7 +322,7 @@ def add_tracking():
     Scheduled Arrival: {data['scheduled_arrival']}
     Transit Time: {data['transit_time']}
     Current Status: {data['current_status']}
-    Price: {data['price']}
+    Price: {data['total_freight']}
 
     Additional Information:
     {data['additional_information']}
