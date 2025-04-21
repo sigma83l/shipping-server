@@ -324,8 +324,7 @@ def add_tracking():
     Current Status: {data['current_status']}
     Price: {data['total_freight']}
 
-    Additional Information:
-    {data['additional_information']}
+
     Tracking Info:
     {data['tracking_additional_info']}
 
