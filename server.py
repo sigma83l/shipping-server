@@ -306,7 +306,7 @@ def add_tracking():
 
     if tracking_col.find_one({'tracking_number': data['tracking_number']}):
         return jsonify({'error': 'Tracking number already exists'}), 409
-
+    print(data)
     tracking_col.insert_one(data)
 
     # Prepare the email body
