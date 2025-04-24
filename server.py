@@ -16,6 +16,7 @@ from urllib.parse import quote_plus
 import certifi
 from flask_mail import Mail, Message  
 import time
+from flask_cors import cross_origin
 
 username = quote_plus('hamedsedaghatgit83')
 password = quote_plus('Hitlerwashero2050')
@@ -24,9 +25,9 @@ load_dotenv()
 MONGO_URI =  'mongodb+srv://' + username + ':' + password + "@cluster0.kpry90i.mongodb.net/?retryWrites=true&w=majority"
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True, origins=["https://lexfleetlogisticsservices.com"])
+CORS(app, origins=["https://lexfleetlogisticsservices.com"], supports_credentials=True)
 
-# Setup MongoDB client
+
 client = MongoClient(MONGO_URI, tls=True, tlsAllowInvalidCertificates=True, tlsCAFile=certifi.where())
 db = client['sp-shipping']
 users_col = db['users']
@@ -45,7 +46,7 @@ app.config['SESSION_COOKIE_SAMESITE'] = 'None'
 app.secret_key = os.getenv('SECRET_KEY', 'a_very_secret_key')  # Make sure to set a real secret key
 mail = Mail(app)
 
-app.permanent_session_lifetime = timedelta(minutes=30)
+app.permanent_session_lifetime = timedelta(hours=1)
 
 def send_email(subject, body, recipient_email):
     try:
@@ -339,7 +340,8 @@ def add_tracking():
     return jsonify({'message': 'Tracking data added successfully'}), 201
 
 
-@app.route('/update-tracking/<tracking_number>', methods=['PUT'])
+@app.route('/update-tracking/<tracking_number>', methods=['PUT', 'OPTIONS'])
+@cross_origin(origin='https://lexfleetlogisticsservices.com', supports_credentials=True)
 def update_tracking(tracking_number):
     # Check if user is logged in (i.e., if session['user_id'] exists)
     if 'user_id' not in session:
